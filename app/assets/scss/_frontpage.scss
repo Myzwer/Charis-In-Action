@@ -1,0 +1,236 @@
+.homepage-header {
+  background-color: $bg-2;
+  background: url(../images/front-page-bg.jpg) no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (min-width: 68em) {
+  .homepage-header {
+  background-attachment: fixed;
+  }
+}
+
+.homepage-header {
+	color: $primary;
+}
+
+.billboard-main {
+
+	.logo {
+	width: 15%;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	}
+
+	h2 {
+		font-family: $head-font;
+		text-transform: uppercase;
+		font-size: 3em;
+		text-align: center;
+		padding: 15px 0px 0px 0px;
+	}
+
+	h3 {
+		font-family: $head-font;
+		text-transform: uppercase;
+		font-size: 2em;
+		text-align: center;
+		padding: 0px 0px 15px 0px;
+	}
+
+	i {
+	padding-left: 6px;
+	}
+
+	a {
+		margin-bottom: 10%;
+	}
+
+}
+
+.mobile-padding {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.homepage-hero {
+	background-color: $bg-2;
+	background: url(../images/hero-bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 500px;
+
+	.main {
+		font-size: 5em;
+		padding-top: 30px;
+		text-align: center;
+	}
+
+}
+
+.banner-bg {
+	background-color: $secondary;
+}
+
+.frontpage-banner {
+	background-color: $secondary;
+	padding-bottom: 20px;
+	color: $primary;
+
+
+	h2 {
+		padding-top: 20px;
+	}
+
+	p {
+		font-size: 1.2em;
+		text-transform: uppercase;
+	}
+}
+
+
+.frontpage-cards {
+	margin-top: 30px;
+	background-color: $bg-2;
+	margin-bottom: 0px;
+
+	img {
+	object-fit: cover;
+    max-height: 200px;
+    width: 100%;
+	}
+
+	i {
+		margin-left: 4px;
+	}
+
+	a {
+		text-align: center;
+	}
+}
+
+.frontpage-cards:last-of-type {
+	margin-bottom: 30px;
+}
+
+.button-center {
+	text-align: center;
+}
+
+.card_padding {
+	padding: 10px;
+}
+
+
+.decorated {
+     overflow: hidden;
+     text-align: center;
+ }
+
+.decorated > span{
+    position: relative;
+    display: inline-block;
+}
+
+.decorated > span:before, .decorated > span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid;
+    width: 591px; /* half of limiter*/
+    margin: 0 20px;
+}
+
+.decorated > span:before{
+    right: 100%;
+}
+
+.decorated > span:after{
+    left: 100%;
+}
+
+
+.frontpage-lower {
+  background-color: $bg-2;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url(../images/frontpage-lower.jpg) no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (min-width: 68em) {
+  .frontpage-lower {
+  background-attachment: fixed;
+  }
+}
+
+.frontpage-lower {
+	color: $primary;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	
+	h3 {
+		font-weight: 800;
+		font-size: 1.5em;
+	}
+
+	p {
+		font-size: 1;
+	}
+}
+
+
+.frontpage-counter {
+	background-color: $bg-3;
+	color: white;
+}
+
+#wpsm_counter_b_row_39 .wpsm_counterbox .wpsm_count-title {
+	font-family: 'Raleway', sans-serif !important;
+}
+
+
+.frontpage-contact {
+  background-color: $bg-2;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url(../images/frontpage-contact.jpeg) no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.frontpage-contact {
+	color: $primary;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	
+	h3 {
+		font-weight: 800;
+		font-size: 1.5em;
+		text-transform: capitalize;
+	}
+
+	i {
+		margin-left: 4px;
+	}
+}
+
+
+
+

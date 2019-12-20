@@ -1,0 +1,98 @@
+.projects-header {
+  background-color: $bg-2;
+  background: url(https://images.unsplash.com/photo-1497219055242-93359eeed651?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2791&q=80) no-repeat bottom center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+
+  h2 {
+    color: $primary;
+    font-size: 3em;
+    padding-top: .5em;
+  }
+
+  h3 {
+    color: $primary;
+  }
+}
+
+@media screen and (min-width: 68em) {
+  .projects-header {
+  background-attachment: fixed;
+  }
+}
+
+
+.projects-hero {
+  background-color: $secondary;
+  margin: 50px 10px;
+  color: $primary;
+
+  h1 {
+    padding: 10px;
+  }
+
+  p {
+    padding: 10px;
+  }
+}
+
+.special-project {
+  background-color: $bg-2;
+  height: 350px;
+  padding-top: 20px;
+
+  img {
+    height: 320px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+.special-project {
+  height: 100%;
+}
+}
+
+
+// Start of Serve Page
+
+.serve-header {
+  background-color: $bg-2;
+  background: url(https://images.unsplash.com/photo-1482858390432-3604b4c9ee07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80) no-repeat bottom center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+
+  h2 {
+    color: $primary;
+    font-size: 3em;
+    padding-top: .5em;
+  }
+
+  h3 {
+    color: $primary;
+  }
+}
+
+@media screen and (min-width: 68em) {
+  .serve-header {
+  background-attachment: fixed;
+  }
+}
+
+
+.serve-hero {
+  
+}
+
+
+

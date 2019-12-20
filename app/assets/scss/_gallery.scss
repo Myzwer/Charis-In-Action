@@ -1,0 +1,102 @@
+.gallery-header {
+  background-color: $bg-2;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/67403904_10162269056995145_5629439804102934528_o.jpg?_nc_cat=109&_nc_oc=AQl9fesbTaDAwrPKKnQf6iJciSB-7kxjKkTnIyPRw871kKaF1nOcss3vmQ4xwuwZEYk&_nc_ht=scontent-atl3-1.xx&oh=d5e7f18227f18a4b450914e2ce0388c6&oe=5DD52A7F) no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+
+  h2 {
+    color: $primary;
+    font-size: 3em;
+    padding-top: .5em;
+  }
+
+  h3 {
+    color: $primary;
+  }
+}
+
+
+.gallery-hero {
+  text-align: center;
+  background-color: $bg-2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.filters {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+  .filters__item {
+    display: inline-block;
+    width: 100%;
+  }
+
+
+    .filters__btn {
+      background: $bg-2;
+      color: black;
+      display: inline-block;
+      padding: 1em;
+      width: 100%;
+      text-align: center;
+    }
+
+
+
+.gallery {
+  margin: 0;
+  padding: 0;
+}
+
+
+  // These color styles are just for testing
+
+
+
+  .gallery__item[data-color="orange"] {
+    background: orange;
+  }
+
+  .gallery__item[data-color="yellow"] {
+    background: yellow;
+  }
+
+  .gallery__item[data-color="green"] {
+    background: green;
+  }
+
+.is-hidden {
+  display: none;
+}

@@ -1,0 +1,77 @@
+.bod-header {
+  background-color: $bg-2;
+  background: url(https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1648&q=80) no-repeat bottom center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+
+  h2 {
+    color: $primary;
+    font-size: 3em;
+    padding-top: .5em;
+  }
+
+  h3 {
+    color: $primary;
+  }
+}
+
+@media screen and (min-width: 68em) {
+  .bod-header {
+  background-attachment: fixed;
+  }
+}
+
+
+//meet the team section
+
+.consult-team {
+  background-color: $primary;
+  padding-bottom: 15px;
+
+  h1 {
+    font-size: 2em;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+}
+
+.team-card {
+  background-color: $bg-2;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+  h4 {
+    padding: 10px 0 0 10px;
+    margin-bottom: -8px;
+  }
+}
+
+
+.team-card-title {
+  color: $secondary;
+  padding-left: 10px;
+  margin-bottom: -3px;
+  font-size: .9em;
+}
+
+.team-card-bio {
+  padding: 10px;
+}
+
+.bottom-board {
+  margin-top: 30px;
+  margin-bottom: 0px;
+
+  img {
+  object-fit: cover;
+    max-height: 200px;
+    width: 100%;
+  }
+}
+
+
+
