@@ -73,6 +73,12 @@ wp_enqueue_script( 'app', get_template_directory_uri() . '/assets/js/app.js');
 }
 add_action('wp_enqueue_scripts', 'app_loadin');
 
+// CUSTOM JAVASCRIPT FILE LOADIN
+function custom_js_loadin() {
+    wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/js/custom.js');
+}
+add_action('wp_enqueue_scripts', 'custom_js_loadin');
+
 
 //*********************************************
 //****************** FONTS ********************

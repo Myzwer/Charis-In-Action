@@ -41,39 +41,6 @@ get_header(); ?>
 	</div>
 </div>
 
-					<!-- <a class = "ff dark1" href = "#">Learn More About Us<i class="fas fa-arrow-circle-right"></i></a> -->
-<div class = "banner-bg fullWidth">
-	<div class="grid-container frontpage-banner center">
-		<div class="grid-x grid-padding-x">
-			<div class="large-12 cell">
-				<h2>Changing Lives that Change the World</h2>
-			</div>
-			<div class="large-12 cell">
-				<hr>
-			</div>
-			<div class="large-2 cell">
-				<p>Haiti</p>
-			</div>
-			<div class="large-2 cell">
-				<p>Zambia</p>
-			</div>
-			<div class="large-2 cell">
-				<p>Sydney</p>
-			</div>
-			<div class="large-2 cell">
-				<p>Canada</p>
-			</div>
-			<div class="large-2 cell">
-				<p>America</p>
-			</div>
-			<div class="large-2 cell">
-				<p>India</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-
 
 <div class="grid-container">
 	<div class="grid-x grid-margin-x">
@@ -104,10 +71,10 @@ get_header(); ?>
 		<div class="small-12 cell frontpage-cards">
 			<img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1648&q=80" alt="">
 			<div class = "card_padding">
-				<h3 class="decorated center"><span>Gallery</span></h3>
+				<h3 class="decorated center"><span>Contact</span></h3>
 				<p>Suspendisse sed ultricies justo, euismod consectetur turpis. Integer id sollicitudin nulla.</p>
 				<div class = "button-center">
-					<a class = "ff dark1" href = "#">Join The Safari!<i class="fas fa-arrow-circle-right"></i></a>
+					<a class = "ff dark1" href = "#">Get In Touch <i class="fas fa-arrow-circle-right"></i></a>
 				</div>
 			</div>
 		</div>
@@ -132,17 +99,49 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class = "frontpage-counter">
-	<div class="grid-container fullWidth center">
-		<div class="grid-x grid-padding-x">
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-                the_content();
-                endwhile; else: ?>
-                <p>Sorry, no posts matched your criteria.</p>
-            <?php endif; ?>
-		</div>
-	</div>
-</div>
+    <div class = "frontpage-counter">
+        <div class="grid-container center">
+            <div class="grid-x grid-padding-x">
+                <div class = "small-12 large-4 cell">
+                    <div class = "counter-outer">
+                        <div id="counter">
+                            <div class="counter-value" data-count="300">0</div>
+                        </div>
+                    </div>
+
+                    <p>An ethno-linguistic group with a common self-identity that is shared by the various members. For strategic purposes it is the largest group within which the Gospel can spread without encountering barriers of understanding or acceptance.</p>
+                </div>
+
+                <div class = "small-12 large-4 cell">
+                    <div class = "counter-outer">
+                        <div id="counter">
+                            <div class="counter-value" data-count="300">0</div>
+                        </div>
+                    </div>
+                    <p>A people group is considered unreached (UPG) when there is no indigenous community of believing Christians able to engage this people group with church planting. Technically speaking, the percentage of evangelical Christians in this people group is less than 2 percent.</p>
+                </div>
+
+                <div class = "small-12 large-4 cell">
+                    <div class = "counter-outer">
+                        <div id="counter">
+                            <div class="counter-value" data-count="300">0</div>
+                        </div>
+                    </div>
+                    <p>Unreached people groups are unengaged (UUPG) when there is no church planting strategy, consistent with evangelical faith and practice, under way. Gathering believers and planting churches are the keys to establishing an effective and multiplying presence among these people groups.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="counter">
+        <div class="counter-value" data-count="400">100</div>
+    </div>
+    <div id="counter">
+        <div class="counter-value" data-count="1500">200</div>
+    </div>
+
 
 
 <div class = "frontpage-contact">
