@@ -105,43 +105,38 @@ get_header(); ?>
                 <div class = "small-12 large-4 cell">
                     <div class = "counter-outer">
                         <div id="counter">
-                            <div class="counter-value" data-count="300">0</div>
+                            <div class="counter-value" data-count="11730">0</div>
+                            <div class="counter-tagline">people groups</div>
                         </div>
                     </div>
-
-                    <p>An ethno-linguistic group with a common self-identity that is shared by the various members. For strategic purposes it is the largest group within which the Gospel can spread without encountering barriers of understanding or acceptance.</p>
+                    <h4 class="counter-header">What is a people group?</h4>
+                    <p class = "people-group-desc">An ethno-linguistic group with a common self-identity that is shared by the various members. For strategic purposes it is the largest group within which the Gospel can spread without encountering barriers of understanding or acceptance.</p>
                 </div>
 
                 <div class = "small-12 large-4 cell">
-                    <div class = "counter-outer">
+                    <div class = "counter-outer-2">
                         <div id="counter">
-                            <div class="counter-value" data-count="300">0</div>
+                            <div class="counter-value" data-count="7070">0</div>
+                            <div class="counter-tagline">Unreached People Groups</div>
                         </div>
                     </div>
-                    <p>A people group is considered unreached (UPG) when there is no indigenous community of believing Christians able to engage this people group with church planting. Technically speaking, the percentage of evangelical Christians in this people group is less than 2 percent.</p>
+                    <h4 class="counter-header">Why are they Unreached?</h4>
+                    <p class = "people-group-desc">A people group is considered unreached (UPG) when there is no indigenous community of believing Christians able to engage this people group with church planting. Technically speaking, the percentage of evangelical Christians in this people group is less than 2 percent.</p>
                 </div>
 
                 <div class = "small-12 large-4 cell">
-                    <div class = "counter-outer">
+                    <div class = "counter-outer-3">
                         <div id="counter">
-                            <div class="counter-value" data-count="300">0</div>
+                            <div class="counter-value" data-count="3132">0</div>
+                            <div class="counter-tagline">Unengaged People Groups</div>
                         </div>
                     </div>
-                    <p>Unreached people groups are unengaged (UUPG) when there is no church planting strategy, consistent with evangelical faith and practice, under way. Gathering believers and planting churches are the keys to establishing an effective and multiplying presence among these people groups.</p>
+                    <h4 class="counter-header">Who are the Unengaged?</h4>
+                    <p class = "people-group-desc">Unreached people groups are unengaged (UUPG) when there is no church planting strategy, consistent with evangelical faith and practice, under way. Gathering believers and planting churches are the keys to establishing an effective and multiplying presence among these people groups.</p>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-    <div id="counter">
-        <div class="counter-value" data-count="400">100</div>
-    </div>
-    <div id="counter">
-        <div class="counter-value" data-count="1500">200</div>
-    </div>
-
 
 
 <div class = "frontpage-contact">

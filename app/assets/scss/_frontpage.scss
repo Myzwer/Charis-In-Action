@@ -195,14 +195,79 @@
 .frontpage-counter {
 	background-color: $bg-3;
 	color: white;
+	padding-top: 40px;
 }
 
 .counter-outer {
-	background: url(http://charis-in-action.local/wp-content/uploads/2019/12/Unreached-1.jpg) no-repeat center center fixed;
+	position: relative;
+	background:
+	linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)
+	),
+	url(http://charisinaction.org/wp-content/uploads/2019/12/Unreached-1.jpg) no-repeat center center scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	height: 200px;
+}
+
+.counter-outer-2 {
+	position: relative;
+	background:
+					linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)
+					),
+					url(http://charisinaction.org/wp-content/uploads/2019/12/Unreached-2.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 200px;
+}
+
+.counter-outer-3 {
+	position: relative;
+	background:
+					linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)
+					),
+					url(http://charisinaction.org/wp-content/uploads/2019/12/Unreached-3.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 200px;
+}
+
+.counter-value {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	font-size: 4em;
+
+}
+
+.counter-tagline {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	font-size: 1em;
+}
+
+.counter-header {
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 1.2em;
+	padding-top: 10px;
+	margin-bottom: 0px;
+}
+
+
+.people-group-desc {
+	text-align: left;
 }
 
 
