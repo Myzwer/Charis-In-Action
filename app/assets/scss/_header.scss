@@ -34,7 +34,11 @@
 }
 //end mobile fixes
 
-
+@media screen and (max-width: 830px) {
+  .dropdown .dropbtn, .topnav .pushypushy a {
+    display: none;
+  }
+}
 
 .topnav .logo {
   float: left;
@@ -158,4 +162,5 @@
   }
 
 }
+
 
