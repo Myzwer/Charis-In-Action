@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b734c025-b0cd-4c4b-b946-a02a3e27fc80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/_frontpage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_frontpage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old about.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-getinvolved.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-getinvolved.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +65,7 @@
       <workItem from="1576812487169" duration="10664000" />
       <workItem from="1577126097192" duration="7539000" />
       <workItem from="1577810323007" duration="1310000" />
-      <workItem from="1577922454920" duration="18166000" />
+      <workItem from="1577922454920" duration="20234000" />
     </task>
     <servers />
   </component>

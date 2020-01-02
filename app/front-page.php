@@ -42,7 +42,7 @@ get_header(); ?>
 </div>
 
 
-<div class="grid-container">
+<div class="grid-container fullWidth">
 	<div class="grid-x grid-margin-x">
 		<div class="small-12 large-6 cell frontpage-cards">
 			<img src="<?php the_field('box_1_image'); ?>" alt="">
