@@ -1,9 +1,8 @@
-@import 'variables'; 
+@import 'variables';
 
 .topnav {
   overflow: hidden;
   background-color: $secondary;
-  flex-wrap: wrap;
 }
 
 
@@ -16,7 +15,6 @@
   text-decoration: none;
   font-size: 17px;
 }
-
 
 .pushypushy {
   float: right;
@@ -31,10 +29,10 @@
   }
 
   .dropdown {
-  float: right;
+    float: right;
+  }
 }
-}
-//end mobile styles
+//end mobile fixes
 
 
 
@@ -63,7 +61,7 @@
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;    
+  font-size: 17px;
   border: none;
   outline: none;
   color: white;
@@ -138,27 +136,26 @@
 }
 
 @media screen and (max-width: 39.9375em) {
-.topnav a {
-  padding: 10px;
+  .topnav a {
+    padding: 10px;
+  }
+
+  .dropdown .dropbtn {
+    padding: 10px;
+
+  }
+
+  .topnav .logo {
+    padding-top: 20px;
+  }
+
+  .topnav .icon {
+    margin-top: 10px;
+  }
+
+  .navpush {
+    margin-top: 80px;
+  }
+
 }
-
-.dropdown .dropbtn {
-  padding: 10px;
-
-}
-
-.topnav .logo {
-  padding-top: 20px;
-}
-
-.topnav .icon {
-  margin-top: 10px;
-}
-
-.navpush {
-  margin-top: 80px;
-}
-
-}
-
 

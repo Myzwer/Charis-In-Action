@@ -1,11 +1,5 @@
 .homepage-header {
-  background-color: $bg-2;
-  background: url(../images/front-page-bg.jpg) no-repeat center center;
-  background-attachment: scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background-color: $bg-2;
 }
 
 @media screen and (min-width: 68em) {
@@ -19,7 +13,6 @@
 }
 
 .billboard-main {
-
 	.logo {
 	width: 15%;
 	text-align: center;
@@ -50,49 +43,11 @@
 	a {
 		margin-bottom: 10%;
 	}
-
 }
 
 .mobile-padding {
 	padding-top: 20px;
 	padding-bottom: 20px;
-}
-
-.homepage-hero {
-	background-color: $bg-2;
-	background: url(../images/hero-bg.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	min-height: 500px;
-
-	.main {
-		font-size: 5em;
-		padding-top: 30px;
-		text-align: center;
-	}
-
-}
-
-.banner-bg {
-	background-color: $secondary;
-}
-
-.frontpage-banner {
-	background-color: $secondary;
-	padding-bottom: 20px;
-	color: $primary;
-
-
-	h2 {
-		padding-top: 20px;
-	}
-
-	p {
-		font-size: 1.2em;
-		text-transform: uppercase;
-	}
 }
 
 
@@ -159,15 +114,7 @@
 
 .frontpage-lower {
   background-color: $bg-2;
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ), url(../images/frontpage-lower.jpg) no-repeat center center;
-  background-attachment: scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background-attachment: scroll;
 }
 
 @media screen and (min-width: 68em) {
@@ -200,42 +147,9 @@
 
 .counter-outer {
 	position: relative;
-	background:
-	linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)
-	),
-	url(http://charisinaction.org/wp-content/uploads/2019/12/Unreached-1.jpg) no-repeat center center scroll;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	height: 200px;
 }
 
-.counter-outer-2 {
-	position: relative;
-	background:
-					linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)
-					),
-					url(http://charisinaction.org/wp-content/uploads/2019/12/Unreached-2.jpg) no-repeat center center scroll;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 200px;
-}
-
-.counter-outer-3 {
-	position: relative;
-	background:
-					linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)
-					),
-					url(http://charisinaction.org/wp-content/uploads/2019/12/Unreached-3.jpg) no-repeat center center scroll;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 200px;
-}
 
 .counter-value {
 	position: absolute;
@@ -273,15 +187,6 @@
 
 .frontpage-contact {
   background-color: $bg-2;
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ), url(../images/frontpage-contact.jpeg) no-repeat center center;
-  background-attachment: scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .frontpage-contact {
