@@ -16,14 +16,14 @@
 
 get_header(); ?>
 
-<div class = "bod-header">
+<div class = "bod-header" style="background: url(<?php the_field('bod_background_image'); ?>) no-repeat bottom center;background-attachment: scroll;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
     <div class="grid-container fullWidth">
         <div class="grid-x grid-padding-x">
             <div class="large-12 cell billboard-main">
                 <div class = "center">
-                    <h2>Our Board Of Directors</h2>
+                    <h2><?php the_field('bod_title'); ?></h2>
                     <hr>
-                    <h3>Enim nulla accumsan fermentum felis ligula at massa.</h3>
+                    <h3><?php the_field('bod_tagline'); ?></h3>
                 </div>
             </div>
         </div>
@@ -40,53 +40,45 @@ get_header(); ?>
 				</h1>
             </div>
 
-            <div class="small-12 medium-4 cell">
-                <div class = "team-card">
-                    <img src="https://images.unsplash.com/photo-1531750026848-8ada78f641c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-                    <h4>Pastor John Doe</h4>
-                    <p class = "team-card-title">Job Title</p>
-                    <p class="team-card-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis lectus ac justo vulputate placerat. Fusce non leo et sapien ultricies lacinia. Nam elementum quam quis massa accumsan ultricies. Vivamus pulvinar tempor est. Morbi vitae metus eget augue scelerisque blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc semper rutrum tellus. Aliquam erat volutpat. Nullam tincidunt orci vel rutrum consequat.</p>
-                </div>
-            </div>
+            <?php
 
-            <div class="small-12 medium-4 cell">
-                <div class = "team-card">
-                    <img src="https://images.unsplash.com/photo-1531750026848-8ada78f641c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-                    <h4>Dr. John Doe</h4>
-                    <p class = "team-card-title">Job Title</p>
-                    <p class="team-card-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis lectus ac justo vulputate placerat. Fusce non leo et sapien ultricies lacinia. Nam elementum quam quis massa accumsan ultricies. Vivamus pulvinar tempor est. Morbi vitae metus eget augue scelerisque blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc semper rutrum tellus. Aliquam erat volutpat. Nullam tincidunt orci vel rutrum consequat.</p>
-                </div>
-            </div>
+            // Start the Repeater Loop
+            if( have_rows('board_member') ):
+                // Card Start
+                    // Begin looping data
+                    while ( have_rows('board_member') ) : the_row();
+                        echo '<div class="small-12 medium-4 cell">';
+                        echo '<div class = "team-card">';
+                        // Member Image
+                        echo '<img src="';
+                        the_sub_field('headshot');
+                        echo '">';
 
-            <div class="small-12 medium-4 cell">
-                <div class = "team-card">
-                    <img src="https://images.unsplash.com/photo-1531750026848-8ada78f641c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-                    <h4>John Doe</h4>
-                    <p class = "team-card-title">Job Title</p>
-                    <p class="team-card-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis lectus ac justo vulputate placerat. Fusce non leo et sapien ultricies lacinia. Nam elementum quam quis massa accumsan ultricies. Vivamus pulvinar tempor est. Morbi vitae metus eget augue scelerisque blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc semper rutrum tellus. Aliquam erat volutpat. Nullam tincidunt orci vel rutrum consequat.</p>
-                </div>
-            </div>
+                        //Name
+                        echo '<h4>';
+                        the_sub_field('name');
+                        echo '</h4>';
 
-            <div class="small-12 medium-4 cell">
-                <div class = "team-card">
-                    <img src="https://images.unsplash.com/photo-1531750026848-8ada78f641c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-                    <h4>John Doe</h4>
-                    <p class = "team-card-title">Job Title</p>
-                    <p class="team-card-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis lectus ac justo vulputate placerat. Fusce non leo et sapien ultricies lacinia. Nam elementum quam quis massa accumsan ultricies. Vivamus pulvinar tempor est. Morbi vitae metus eget augue scelerisque blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc semper rutrum tellus. Aliquam erat volutpat. Nullam tincidunt orci vel rutrum consequat.</p>
-                </div>
-            </div>
+                        //Job Title
+                        echo '<p class = "team-card-title">';
+                        the_sub_field('job_title');
+                        echo '</p>';
 
-                        <div class="small-12 medium-4 cell">
-                <div class = "team-card">
-                    <img src="https://images.unsplash.com/photo-1531750026848-8ada78f641c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-                    <h4>John Doe</h4>
-                    <p class = "team-card-title">Job Title</p>
-                    <p class="team-card-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis lectus ac justo vulputate placerat. Fusce non leo et sapien ultricies lacinia. Nam elementum quam quis massa accumsan ultricies. Vivamus pulvinar tempor est. Morbi vitae metus eget augue scelerisque blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc semper rutrum tellus. Aliquam erat volutpat. Nullam tincidunt orci vel rutrum consequat.</p>
-                </div>
-            </div>
+                        //Bio
+                        echo '<p class="team-card-bio">';
+                        the_sub_field('bio');
+                        echo '</p>';
+                        echo '</div>';
+                        echo '</div>';
+                endwhile;
+
+            else :
+                // no rows found
+            endif;
+            ?>
 
             <div class="small-12 bottom-board cell">
-                    <img src="https://images.unsplash.com/photo-1502088513349-3ff6482aa816?ixlib=rb-1.2.1&auto=format&fit=crop&w=1992&q=80" alt="">
+                    <img src="<?php the_field('bod_footer_image'); ?>" alt="">
                 </div>
             </div>
         </div>
