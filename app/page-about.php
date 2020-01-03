@@ -16,14 +16,14 @@
 
 get_header(); ?>
 <!-- The Header section with the photo and mission statement. -->
-<div class = "about-header">
+<div class = "about-header" style="  background: url(<?php the_field('about_background_image'); ?>) no-repeat bottom center;background-attachment: scroll;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
     <div class="grid-container fullWidth">
         <div class="grid-x grid-padding-x">
             <div class="large-12 cell billboard-main">
                 <div class = "center">
-                    <h2>About Us</h2>
+                    <h2><?php the_field('about_page_title'); ?></h2>
                     <hr>
-                    <h3>We have a mission statement and it goes here.</h3>
+                    <h3><?php the_field('about_tagline'); ?></h3>
                 </div>
             </div>
         </div>
@@ -37,8 +37,7 @@ get_header(); ?>
         <div class="small-12 large-8 cell about_bio">
             <div class = "inner-bio">
                 <p>
-                Charis in Action was founded by Dr. Todd Stewart in 2014 to support external ministries outside the local church.  Charis is the Greek word for grace, God's undeserved favor that He provides for mankind. Charis in Action equips disciples of Jesus to both share and demonstrate the love of Jesus Christ. It is literally God's grace in action throughout the world. The foundation of everything we do is rooted in the Great Commission: “Go and make disciples of all nations” Matthew 28:19.  It is our passion to make Jesus known to every nation, tribe, people, and language.  Therefore, we partner with, equip, and send missional servants to faithfully carry out the Great Commission.  We believe the local church is the primary biblical sending organization.  However, some churches and church leaders do not understand or embrace this commitment.  We want to help followers of Jesus have a pathway to engage in the global mission of God.  
-
+                    <?php the_field('about_main_copy'); ?>
                 </p>
             </div>
         </div>
@@ -47,30 +46,30 @@ get_header(); ?>
             <div class="grid-container fullWidth"> 
                 <div class="grid-x grid-margin-x">
                      <div class="small-12 medium-6 large-12 cell">
-                        <a href = "http://charisinaction.org/directors">
+                        <a href = "<?php the_field('link_box_1'); ?>">
                             <div class = "about-card-outer">
                                 <div class = "about-card-inner">
                                     <div class = "about-card-overlay">
                                     <h3 class="headline">
-                                        <span>Our Directors</span>
+                                        <span><?php the_field('link_text_box_1'); ?></span>
                                     </h3>
                                     </div>
-                                    <img src="https://images.unsplash.com/photo-1505562130589-9879683e72da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="">
+                                    <img src="<?php the_field('background_image_box_1'); ?>" alt="">
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <div class="small-12 medium-6 large-12 add-padding cell">
-                        <a href = "http://charisinaction.org/partners">
+                        <a href = "<?php the_field('link_box_2'); ?>">
                             <div class = "about-card-outer">
                                 <div class = "about-card-inner">
                                     <div class = "about-card-overlay">
                                     <h3 class="headline">
-                                        <span>Our Partners</span>
+                                        <span><?php the_field('link_text_box_2'); ?></span>
                                     </h3>
                                     </div>
-                                    <img src="https://images.unsplash.com/photo-1465533403411-0af6ede250dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="">
+                                    <img src="<?php the_field('background_image_box_2'); ?>" alt="">
                                 </div>
                             </div>
                         </a>
@@ -87,31 +86,31 @@ get_header(); ?>
             <div class="contact-card">
                 <p>
                     <span class = "underline">
-                        <span>123 456 7890</span>
+                        <span><?php the_field('phone_number'); ?></span>
                     </span>
 
                     <span class = "underline">
-                        <span>todd@charisinaction.org</span>
+                        <span><?php the_field('email_about'); ?></span>
                     </span>
 
                     <span class = "underline">
-                        <span>charisinaction.org</span>
-                    </span>
-                </p>
-
-                <p>
-                    <span class = "underline">
-                        <span>42 Wallaby Way</span>
-                    </span>
-
-                    <span class = "underline">
-                        <span>Sydney, Australia</span>
+                        <span><?php the_field('website_about'); ?></span>
                     </span>
                 </p>
 
                 <p>
                     <span class = "underline">
-                        <span>Contact Us</span>
+                        <span><?php the_field('address_line_1'); ?></span>
+                    </span>
+
+                    <span class = "underline">
+                        <span><?php the_field('address_line_2'); ?></span>
+                    </span>
+                </p>
+
+                <p>
+                    <span class = "underline">
+                        <span><?php the_field('final_cta'); ?></span>
                     </span>
 
                     <span>
@@ -122,7 +121,7 @@ get_header(); ?>
         </div>
         
         <div class="small-12 medium-7 large-8 cell">
-            <div class = "about-contact-photo">
+            <div class = "about-contact-photo" style = "background: url(<?php the_field('image_about_footer'); ?>) no-repeat bottom center;background-attachment: scroll;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
             </div>
         </div>
     </div>
