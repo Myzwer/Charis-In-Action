@@ -17,9 +17,9 @@ get_header(); ?>
         <div class="grid-x grid-padding-x">
             <div class="large-12 cell billboard-main">
                 <div class = "center">
-                    <h2>Projects</h2>
+                    <h2>Take A Trip</h2>
                     <hr>
-                    <h3>God is on the move</h3>
+                    <h3>Secondary tagline or whatever</h3>
                 </div>
             </div>
         </div>

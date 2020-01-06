@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b734c025-b0cd-4c4b-b946-a02a3e27fc80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/_blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_blog.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/_partners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_partners.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page-bod.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-bod.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page-partners.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-partners.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/_involved.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-getinvolved.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +66,7 @@
       <workItem from="1577126097192" duration="7539000" />
       <workItem from="1577810323007" duration="1310000" />
       <workItem from="1577922454920" duration="41910000" />
-      <workItem from="1578282949753" duration="1748000" />
+      <workItem from="1578282949753" duration="2872000" />
     </task>
     <servers />
   </component>
