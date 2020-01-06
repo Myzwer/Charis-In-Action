@@ -58,7 +58,7 @@ get_header(); ?>
 
         <div class="small-12 medium-6 cell">
             <img class = "partner-3" src="<?php the_field('partner_featured_image_3'); ?>" alt="">
-            <div class="partner-details fixed-height ">
+            <div class="partner-details fixed-height">
                 <h4><?php the_field('partner_name_3'); ?></h4>
                 <p><?php the_field('partner_information_3'); ?></p>
                 <a class = "ff dark1" href = "<?php the_field('cta_button_link_3'); ?>"><?php the_field('cta_button_text_3'); ?> <i class="fas fa-arrow-circle-right push"></i></a>
