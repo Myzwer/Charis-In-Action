@@ -17,13 +17,12 @@
 get_header(); ?>
 
 <div class="bg-4">
-    <div class = "blog-header">
+    <div class = "blog-header" style = "background: url(<?php the_field('blog_background_image',  get_option('page_for_posts')); ?>) no-repeat center center;background-attachment: scroll;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
         <div class="grid-container fullWidth">
             <div class="grid-x grid-padding-x">
                 <div class="large-12 cell billboard-main">
                     <div class = "center">
-                        <h2>The Charis In Action Blog</h2>
-                        <!-- <img class = "blog-logo" src="http://charis-in-action.local/wp-content/uploads/2019/07/logo.png"> -->
+                        <h2><?php the_field('blog_page_title',  get_option('page_for_posts')); ?></h2>
                     </div>
                 </div>
             </div>

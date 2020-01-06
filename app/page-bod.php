@@ -41,7 +41,6 @@ get_header(); ?>
             </div>
 
             <?php
-
             // Start the Repeater Loop
             if( have_rows('board_member') ):
                 // Card Start
@@ -71,7 +70,6 @@ get_header(); ?>
                         echo '</div>';
                         echo '</div>';
                 endwhile;
-
             else :
                 // no rows found
             endif;
