@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b734c025-b0cd-4c4b-b946-a02a3e27fc80" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/page-contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/_trip.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_trip.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page-trip.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-trip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +28,11 @@
   </component>
   <component name="ProjectId" id="1VEJnP5PGZ3E5eRRYGp2UpHG3Io" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -40,15 +43,15 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -67,7 +70,10 @@
       <workItem from="1577810323007" duration="1310000" />
       <workItem from="1577922454920" duration="41910000" />
       <workItem from="1578282949753" duration="11195000" />
-      <workItem from="1578367762813" duration="4829000" />
+      <workItem from="1578367762813" duration="6903000" />
+      <workItem from="1578505430552" duration="105000" />
+      <workItem from="1578505580705" duration="3000" />
+      <workItem from="1578545818411" duration="360000" />
     </task>
     <servers />
   </component>
@@ -86,5 +92,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="399" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1578545821055">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="399" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877/1440.23.1920.1057/3360.23.1920.1057@0.23.1440.877" timestamp="1578505581304" />
+    <state x="399" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1578545821055" />
   </component>
 </project>
