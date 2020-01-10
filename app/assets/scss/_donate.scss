@@ -25,3 +25,61 @@
   background-attachment: fixed;
   }
 }
+
+.donate-card {
+  background-color: $bg-2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+   text-align: justify;
+  }
+
+  .button-center {
+    margin-bottom: 10px;
+  }
+}
+
+.donate-banner {
+  background-color: $tertiary;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+
+.donate-partner-card {
+  background-color: $bg-2;
+  margin-bottom: 20px;
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+    padding: 15px;
+  }
+
+  .button-center {
+    padding-bottom: 10px;
+  }
+}
+
+.image-container {
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+
+
