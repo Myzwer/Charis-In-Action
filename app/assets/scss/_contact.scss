@@ -1,0 +1,45 @@
+.contact-body {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background-color: $bg;
+}
+
+.contact-info {
+  margin-top: 20px;
+  background-color: $bg-2;
+  text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+  .contact-info {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 47em) {
+  .contact-info {
+    margin-top: 0px;
+    padding-top: 120px;
+  }
+}
+
+.contact-image-banner {
+  object-fit: cover;
+  max-height: 200px;
+  width: 100%;
+  margin-tOP: 50px;
+}
+
+.email-banner {
+  background-color: $tertiary;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+  a:link, a:visited {
+    color: $bg-2;
+  }
+}
