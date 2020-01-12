@@ -12,7 +12,7 @@
 
 get_header(); ?>
 <!-- The Header section with the photo and mission statement. -->
-<div class = "trip-header" style = "background: url(<?php the_field('contact_background_image'); ?>) no-repeat bottom center;background-attachment: scroll;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+<div class = "trip-header" style = "background: url(<?php the_field('contact_background_image'); ?>) no-repeat center center;background-attachment: scroll;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
     <div class="grid-container fullWidth">
         <div class="grid-x grid-padding-x">
             <div class="large-12 cell billboard-main">
@@ -36,8 +36,8 @@ get_header(); ?>
                 <?php endif; ?>
             </div>
             <div class="small-12 medium-6 large-6 cell  contact-info">
-                <h3>Reach out and stuff.</h3>
-                <p>Donec arcu nunc, feugiat et venenatis ornare, laoreet sit amet erat. Nunc sed ipsum ultricies, cursus mi a, mattis ante. Integer id mollis ligula. Nunc velit velit, tempus vel accumsan at, dictum eu nisi. Integer accumsan sapien sed diam tempus, molestie vestibulum ligula ultrices. Nullam ac viverra quam. Aliquam sagittis enim vitae eleifend placerat. Morbi et elit sed libero venenatis iaculis.</p>
+                <h3><?php the_field('contact_headline'); ?></h3>
+                <p><?php the_field('contact_main_paragraph'); ?></p>
             </div>
         </div>
     </div>
@@ -45,11 +45,11 @@ get_header(); ?>
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="small-12 cell contact-image-banner ">
-                <img class = "partner-4" src="http://charis-in-action.local/wp-content/uploads/2020/01/frontpage-contact.jpeg" alt="">
+                <img class = "partner-4" src="<?php the_field('footer_image'); ?>" alt="">
             </div>
             <div class="small-12 cell email-banner">
-                <h3>Email work better?</h3>
-                <p>Hey, that's fine probably. Curabitur dignissim metus sed elit accumsan, sed ornare velit sodales. Integer nec dapibus ligula. Sed et neque vel purus commodo <a href="mailto:info@charisinaction.org">info@charisinaction.org</a>. </p>
+                <h3><?php the_field('contact_footer_headline'); ?></h3>
+                <p><?php the_field('contact_footer_body'); ?> </p>
             </div>
         </div>
     </div>

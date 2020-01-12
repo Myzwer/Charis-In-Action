@@ -18,15 +18,15 @@
     <ul>
       <li>Home</li>
       <li>About</li>
-      <li>Gallery</li>
       <li>Blog</li>
+      <li>Privacy Policy</li>
     </ul>
   </div>
   <div class="col">
-    <h1>Partners</h1>
+    <h1>Get Involved</h1>
     <ul>
-      <li>Haiti</li>
-      <li>Other Place</li>
+      <li>Take A Trip</li>
+      <li>Partners</li>
     </ul>
   </div>
   <div class="col">
@@ -36,10 +36,12 @@
       <li>Donate</li>
     </ul>
   </div>
-  <div class="col social">
+  <div class="col">
     <h1>Social</h1>
     <ul>
-      <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Email</li>
     </ul>
   </div>
 <div class="clearfix"></div>

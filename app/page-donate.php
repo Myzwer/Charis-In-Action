@@ -19,10 +19,10 @@ get_header(); ?>
 <div class = "">
     <div class="grid-container fullWidth">
         <div class="grid-x grid-padding-x">
-            <div class="small-12 cell billboard-main donate-header">
+            <div class="small-12 cell billboard-main donate-header" style = "  background: url(<?php the_field('donate_background_image'); ?>) no-repeat bottom center;background-attachment: scroll;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
                 <div class = "center">
-                    <h2>Give to the Mission</h2>
-                    <a class = "ff dark1" href = "#">Donate Now <i class="fas fa-arrow-circle-right push"></i></a>
+                    <h2><?php the_field('donate_headline'); ?></h2>
+                    <a class = "ff dark1" href = "<?php the_field('donate_button_link_1'); ?>"><?php the_field('donate_button_text_1'); ?> <i class="fas fa-arrow-circle-right push"></i></a>
                 </div>
             </div>
         </div>
@@ -33,8 +33,8 @@ get_header(); ?>
     <div class="grid-container">
         <div class="grid-x grid-padding-x grid-margin-x">
             <div class="small-12 cell donate-card">
-                <h2>Who am I helping?</h2>
-                <p>People want to know where their money is going. Tell them.  Donec suscipit tincidunt neque eu euismod. Suspendisse molestie nunc id fermentum consequat. Nunc convallis massa sit amet augue convallis eleifend. Proin sodales malesuada dolor, ac hendrerit ipsum interdum feugiat. Phasellus gravida urna ligula, at aliquam est sodales vitae. Donec suscipit arcu lacus, nec suscipit tellus pellentesque vitae. Pellentesque vitae ligula gravida, maximus ligula et, malesuada erat.</p>
+                <h2><?php the_field('donate_headline'); ?></h2>
+                <p><?php the_field('donate_main_body'); ?></p>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@ get_header(); ?>
     <div class="grid-container">
         <div class="grid-x">
             <div class="small-12 cell ">
-                <img class = "partner-4" src="http://charis-in-action.local/wp-content/uploads/2020/01/photo-1518709766631-a6a7f45921c3.jpeg" alt="">
+                <img class = "partner-4" src="<?php the_field('donate_banner_image'); ?>" alt="">
             </div>
         </div>
     </div>
@@ -51,47 +51,63 @@ get_header(); ?>
         <div class="grid-x">
             <div class="small-12 cell ">
                 <div class="small-12 cell donate-banner">
-                    <h2>Our Partners for Donations</h2>
+                    <h2><?php the_field('donate_banner_text'); ?></h2>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--<div class="grid-container fullWidth">
-        <div class="grid-x grid-margin-x">
-            <div class="small-12 medium-6 medium-offset-3 large-4 large-offset-0 image-container cell">
-                <img src="http://charis-in-action.local/wp-content/uploads/2020/01/FC-Headshots-8118.jpg" alt="">
-            </div>
-                <div class="small-12 medium-6 medium-offset-3 large-8 large-offset-0 cell donate-partner-card">
-                    <h2>Todd and Kristy</h2>
-                    <p>Donec suscipit tincidunt neque eu euismod. Suspendisse molestie nunc id fermentum consequat. Nunc convallis massa sit amet augue convallis eleifend. Proin sodales malesuada dolor, ac hendrerit ipsum interdum feugiat. Phasellus gravida urna ligula, at aliquam est sodales vitae. Donec suscipit arcu lacus, nec suscipit tellus pellentesque vitae. Pellentesque vitae ligula gravida, maximus ligula et, malesuada erat.</p>
-                    <div class="button-center">
-                        <a class = "ff dark1" href = "#">Donate Now <i class="fas fa-arrow-circle-right push"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-
     <div class="grid-container fullWidth">
         <div class="grid-x grid-margin-x">
-            <div class="small-12 medium-6 large-4 cell">
+            <?php
+            // Start the Repeater Loop
+            if (have_rows('donation_partners')):
+// Card Start
+// Begin looping data
+                while (have_rows('donation_partners')) : the_row();
 
-                <div class="grid-container fullWidth">
-                    <div class="grid-x grid-margin-x">
-                        <div class="small-12 image-container cell">
-                            <img src="http://charis-in-action.local/wp-content/uploads/2020/01/FC-Headshots-8118.jpg" alt="">
-                        </div>
-                        <div class="small-12 cell donate-partner-card">
-                            <h2>Todd and Kristy</h2>
-                            <p>Donec suscipit tincidunt neque eu euismod. Suspendisse molestie nunc id fermentum consequat. Nunc convallis massa sit amet augue convallis eleifend. Proin sodales malesuada dolor, ac hendrerit ipsum interdum feugiat. Phasellus gravida urna ligula, at aliquam est sodales vitae. Donec suscipit arcu lacus, nec suscipit tellus pellentesque vitae. Pellentesque vitae ligula gravida, maximus ligula et, malesuada erat.</p>
-                            <div class="button-center">
-                                <a class = "ff dark1" href = "#">Donate Now <i class="fas fa-arrow-circle-right push"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    echo '<div class="small-12 medium-6 large-4 cell">';
+                    echo '<div class="grid-container fullWidth">';
+                    echo '<div class="grid-x grid-margin-x">';
+
+                    echo '<div class="small-12 image-container cell">';
+
+                    echo '<img src="';
+                    the_sub_field('repeater_image');
+                    echo '">';
+
+                    echo '</div>';
+
+                    echo '<div class="small-12 cell donate-partner-card">';
+//Name
+                    echo '<h2>';
+                    the_sub_field('donate_partner_title');
+                    echo '</h2>';
+
+//Job Title
+                    echo '<p>';
+                    the_sub_field('donate_partner_details');
+                    echo '</p>';
+
+//Button
+                    echo '<div class = "button-center">';
+                    echo '<a class = "ff dark1" href = "';
+                    the_sub_field('partner_cta_link');
+                    echo '"/>';
+                    the_sub_field('partner_cta_text');
+                    echo ' <i class="fas fa-arrow-circle-right"></i>';
+                    echo '</a>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '</div>';
+                endwhile;
+            else :
+// no rows found
+            endif;
+            ?>
+
         </div>
     </div>
 
